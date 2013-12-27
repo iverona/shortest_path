@@ -12,6 +12,7 @@ Some drawbacks already detected:
 * No negative tests are working. Check how to assertRaises works. 
 * Ugly web interface!
 * Exception handling has to be improved
+* Mixed file&DB inputs
 * Many more not yet detected ;)
 
 
