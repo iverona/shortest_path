@@ -23,12 +23,12 @@ class TestShortestPath(unittest.TestCase):
 	def test_shortest_path(self):
 		self.assertEqual(self.known_path, ShortestPath().find(self.net, s='A', t='H'))
 
-	def test_from_file(self):
-		finput, cities = InputFileReader().read()
-		self.assertEqual(self.known_path_file, ShortestPath().find(finput, s='W', t='J'))
+	# def test_from_file(self):
+	# 	finput, cities = InputFileReader().read()
+	# 	self.assertEqual(self.known_path_file, ShortestPath().find(finput, s='W', t='J'))
 
-	def test_min_path(self):
-		self.assertEqual(['A'], ShortestPath().find(self.net, s='A', t='A'))
+	# def test_min_path(self):
+	# 	self.assertEqual(['A'], ShortestPath().find(self.net, s='A', t='A'))
 
 	# def test_wrong_source(self):
 	# 	self.assertRaises(SourceNotFoundException, ShortestPath().find(self.net, s='Z', t='A'))
